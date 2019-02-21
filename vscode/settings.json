@@ -1,0 +1,72 @@
+{
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.incsearch": true,
+    "vim.leader": ",",
+    "vim.easymotion": true,
+    "vim.visualstar": true,
+    "vim.insertModeKeyBindings": [{
+        "before": ["j", "j"],
+        "after": ["<ESC>"]
+    }],
+    "vim.normalModeKeyBindings": [{
+            "before": ["H"],
+            "after": ["^"]
+        },
+        {
+            "before": ["L"],
+            "after": ["$"]
+        },
+        {
+            "before": [";"],
+            "after": [":"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [{
+            "before": ["j"],
+            "after": ["g", "j"]
+        },
+        {
+            "before": ["k"],
+            "after": ["g", "k"]
+        },
+        {
+            "before": ["p"],
+            "after": ["p", "g", "v", "y"]
+        },
+        {
+            "before": ["<space>"],
+            "after": ["/"]
+        }
+    ],
+    // visuan mode key bindings
+    "vim.visualModeKeyBindingsNonRecursive": [{
+            "before": [">"],
+            "commands": ["editor.action.indentLines"]
+        },
+        {
+            "before": ["<"],
+            "commands": ["editor.action.outdentLines"]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-e>": false,
+        "<C-n>": false,
+        "<C-w>": false,
+        "<C-s>": false
+    },
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+
+    "files.trimTrailingWhitespace": true,
+
+    // use sync setting
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.renderControlCharacters": true,
+
+    "terminal.integrated.shell.windows": "C:\\Developtool\\PortableGit\\git-cmd.exe",
+    "git.ignoreMissingGitWarning": true,
+    "git.path": "C:\\Developtool\\PortableGit\\bin\\git.exe"
+}
