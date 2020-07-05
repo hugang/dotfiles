@@ -3,8 +3,10 @@
 
 !/.gitignore
 !/.gitconfig
-!/.vimrc
 !/.xmodmap
 !/README.md
-
-!/st/*
+!/st/
+/st/*.o
+/st/*.orig
+/st/*.rej
+/st/st
