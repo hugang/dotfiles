@@ -10,3 +10,8 @@
 /st/*.orig
 /st/*.rej
 /st/st
+!/dwm/
+/dwm/*.o
+/dwm/*.orig
+/dwm/*.rej
+/dwm/dwm
