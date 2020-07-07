@@ -25,3 +25,15 @@ sudo make clean install
 ## dwm
 git clone https://git.suckless.org/dwm
 sudo make clean install
+
+## vim
+mkdir ~/.vim/autoload -p
+wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+## zsh
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cd ~/.oh-my-zsh/custom/plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting
+> edit .zshrc
+plugins=(zsh-autosuggestions zsh-syntax-highlighting)
