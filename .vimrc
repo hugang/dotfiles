@@ -17,6 +17,7 @@ set nobackup
 set noerrorbells
 set novisualbell
 set nowrap
+set autochdir
 
 set encoding=utf-8
 set fileencodings=utf-8,shift-jis,cp932,cp936,latin1
@@ -34,3 +35,10 @@ nnoremap <leader>sv :source ~/.vimrc<cr>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
 
+nnoremap <C-p> :FZF<cr>
+inoremap <C-p> <esc>:FZF<cr>
+
+nnoremap <leader>l :bn<cr>
+
+nnoremap <leader>p "*p
+nnoremap <leader>y "*y
