@@ -5,6 +5,7 @@
 !/zsh/
 !/doc/
 !/.dwm/
+!/scripts/
 !/.gitconfig
 !/.gitignore
 !/.inputrc
