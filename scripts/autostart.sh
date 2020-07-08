@@ -9,6 +9,7 @@
 
 # status
 /bin/bash ~/scripts/dwm-status.sh &
+/bin/bash ~/scripts/wp-autochange.sh &
 picom -b
 # keymap
 xmodmap +/.xmodmap &
@@ -21,7 +22,6 @@ xfce4-power-manager &
 # multi display
 xrandr --output HDMI1 --auto --mode 1920x1080 --left-of eDP1 
 # wallpaper
-/bin/bash ~/scripts/wp-autochange.sh &
 
 #TODO can't launch dwm when turn this option on
 # install amixer acpi acpitool bc
