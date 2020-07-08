@@ -18,6 +18,7 @@ set noerrorbells
 set novisualbell
 set nowrap
 set autochdir
+set hidden
 
 set encoding=utf-8
 set fileencodings=utf-8,shift-jis,cp932,cp936,latin1
