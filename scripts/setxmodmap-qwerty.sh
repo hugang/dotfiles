@@ -1,5 +1,5 @@
 #!/bin/bash
 
-xmodmap ~/.Xmodmap-cn
+xmodmap ~/.xmodmap
 xset r rate 250 30
 

@@ -30,6 +30,13 @@ color gruvbox
 set list
 set listchars=eol:#,space:^,extends:>
 
+
+set hlsearch
+set incsearch
+set smartcase
+set ignorecase
+nnoremap <leader><cr> :nohls<cr>
+
 nnoremap <leader>ev :e ~/.vimrc<cr>
 nnoremap <leader>sv :source ~/.vimrc<cr>
 nnoremap <leader>w :w<cr>
