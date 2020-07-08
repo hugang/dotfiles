@@ -13,4 +13,5 @@ alias grs'git reset --soft'
 
 alias ra='ranger'
 alias s='archey3'
+alias c='clear'
 
