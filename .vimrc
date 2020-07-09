@@ -10,6 +10,7 @@ Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'skanehira/preview-markdown.vim'
+Plug 'preservim/nerdcommenter'
 Plug 'ycm-core/YouCompleteMe'
 
 call plug#end()
