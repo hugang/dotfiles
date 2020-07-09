@@ -1,23 +1,25 @@
 ## tools
 ```bash
-sudo pacmsn -S wpa_supplicant dhcpcd
-sudo pacman -S ranger feh
-sudo pacman -S man git base-devel
+sudo pacman -S ranger feh man git picom acpi alsa-utils
 ```
 
-## chrome
+## yay
 ```bash
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 yay google-chrome
+yay lazygit
+yay acpitool
 ```
 
 
 ## font
-https://github.com/ryanoasis/nerd-fonts.git
+git clone https://github.com/ryanoasis/nerd-fonts.git --depth=1
+cd nerd-fonts
+./install.sh
 
-## terminal
+## st
 git clone https://git.suckless.org/st
 cd st
 sudo make clean install
