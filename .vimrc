@@ -10,6 +10,7 @@ Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'skanehira/preview-markdown.vim'
+Plug 'ycm-core/YouCompleteMe'
 
 call plug#end()
 
@@ -37,7 +38,16 @@ set hlsearch
 set incsearch
 set smartcase
 set ignorecase
+exec ':set nohls'
 nnoremap <leader><cr> :nohls<cr>
+
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set smarttab
+
 
 nnoremap <leader>ev :e ~/.vimrc<cr>
 nnoremap <leader>sv :source ~/.vimrc<cr>

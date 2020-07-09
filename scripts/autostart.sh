@@ -12,7 +12,7 @@
 /bin/bash ~/scripts/wp-autochange.sh &
 picom -b
 # keymap
-xmodmap +/.xmodmap &
+xmodmap ~/.xmodmap &
 # power
 xfce4-power-manager &
 # audio
@@ -27,3 +27,4 @@ xrandr --output HDMI1 --auto --mode 1920x1080 --left-of eDP1
 # install amixer acpi acpitool bc
 # refresh status
 #/bin/bash ~/scripts/dwm-status-refresh.sh
+fcitx &
