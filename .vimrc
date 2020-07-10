@@ -9,7 +9,6 @@ Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
-Plug 'skanehira/preview-markdown.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'ycm-core/YouCompleteMe'
 
@@ -63,5 +62,3 @@ nnoremap <leader>l :bn<cr>
 nnoremap <leader>p "*p
 nnoremap <leader>y "*y
 
-nnoremap <leader>m :PreviewMarkdown<cr>
-let g:preview_markdown_vertical = 1
