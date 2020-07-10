@@ -38,9 +38,10 @@ print_bat(){
 	echo "$(get_battery_charging_status) $(get_battery_combined_percent)%";
 }
 
-print_date(){
-	date '+%Y-%m-%d %H:%M'
-}
+#print_date(){
+	##date '+%Y-%m-%d %H:%M'
+	#date
+#}
 
 show_record(){
 	test -f /tmp/r2d2 || return
@@ -67,8 +68,8 @@ export IDENTIFIER="unicode"
 #. "$DIR/dwmbar-functions/dwm_network.sh"
 #. "$DIR/dwmbar-functions/dwm_keyboard.sh"
 #. "$DIR/dwmbar-functions/dwm_ccurse.sh"
-#. "$DIR/dwmbar-functions/dwm_date.sh"
+. "$DIR/dwmbar-functions/dwm_date.sh"
 
 
-xsetroot -name "  💿 $(print_mem)M $(dwm_alsa) $(print_bat) $(show_record) $(print_date) @HG "
+xsetroot -name "  💿 $(print_mem)M $(dwm_alsa) $(print_bat) $(show_record) $(dwm_date) @HG "
 exit 0
