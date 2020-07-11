@@ -21,6 +21,11 @@ Plug 'preservim/nerdcommenter'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
+"markdown
+Plug 'tpope/vim-markdown'
+Plug 'kannokanno/previm'
+Plug 'tyru/open-browser.vim'
+
 
 call plug#end()
 
@@ -35,6 +40,9 @@ let g:UltiSnipsExpandTrigger ="<tab>"
 let g:UltiSnipsJumpForwardTrigger ="<tab>"
 let g:UltiSnipsJumpBackwardTrigger ="<s-tab>"
 let g:UltiSnipsSnippetsDir ="~/.vim/UltiSnips"
+
+let g:previm_enable_realtime = 1
+nnoremap <silent> <leader>m :PrevimOpen<CR>
 
 set noswapfile
 set nobackup
