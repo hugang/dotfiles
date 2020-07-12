@@ -21,6 +21,9 @@ nmap <leader>w :w!<cr>
 nmap <leader>ev :e ~/.vimrc<cr>
 nmap <leader>sv :source ~/.vimrc<cr>
 
+" :W sudo saves the file 
+" (useful for handling the permission-denied error)
+command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM plugins
@@ -104,7 +107,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme desert
+    colorscheme gruvbox
 catch
 endtry
 
