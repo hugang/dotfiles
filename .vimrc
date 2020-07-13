@@ -25,6 +25,24 @@ nmap <leader>sv :source ~/.vimrc<cr>
 " (useful for handling the permission-denied error)
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Coremak 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map ; :
+noremap k i
+noremap K I
+noremap <silent> n j
+noremap <silent> e k
+noremap <silent> i l
+noremap <silent> I $
+noremap <silent> H 0
+noremap <silent> N 5j
+noremap <silent> E 5k
+noremap <silent> W 5w
+noremap <silent> B 5b
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

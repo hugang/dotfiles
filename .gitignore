@@ -10,6 +10,6 @@
 !/.gitignore
 !/.inputrc
 !/.vimrc
-!/.xmodmap
+!/xmod.cfg
 !/.zprofile
 !/README.md

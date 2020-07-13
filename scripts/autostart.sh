@@ -7,6 +7,7 @@
 ##/bin/bash ~/scripts/run-mailsync.sh &
 #/bin/bash ~/scripts/autostart_wait.sh &
 
+
 # status
 /bin/bash ~/scripts/dwm-status.sh &
 /bin/bash ~/scripts/wp-autochange.sh &
