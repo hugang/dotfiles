@@ -21,7 +21,8 @@ xfce4-power-manager &
 # multi display
 xrandr --output HDMI1 --auto --mode 1920x1080 --left-of eDP1
 # wallpaper
-/bin/bash ~/scripts/setxmodmap-colemak.sh &
+#/bin/bash ~/scripts/setxmodmap-colemak.sh &
+/bin/bash ~/scripts/setxmodmap-qwerty.sh &
 
 #TODO can't launch dwm when turn this option on
 # install amixer acpi acpitool bc
