@@ -1,4 +1,5 @@
-*.o
 dwm
+*.o
+.ccls-cache/
 *.rej
 *.orig
