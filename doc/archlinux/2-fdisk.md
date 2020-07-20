@@ -2,9 +2,6 @@
 ```bash
 fdisk -l
 ```
-
-
-
 ## format disk
 ```bash
 fdisk /dev/nvme0n1
@@ -17,8 +14,6 @@ remainder of the device
 +1024m
 ```
 
-
-
 ## format partitions with file system
 ```bash
 mkfs.fat -F32 /dev/nvme0n1p1
@@ -27,7 +22,3 @@ mkswap /dev/nvme0n1p3
 swapon /dev/nvme0n1p3
 
 ```
-
-
-
-

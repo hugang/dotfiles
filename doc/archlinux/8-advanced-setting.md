@@ -13,15 +13,12 @@ yay lazygit
 yay acpitool
 ```
 
-
 ## font
 ```bash
 git clone https://github.com/ryanoasis/nerd-fonts.git --depth=1
 cd nerd-fonts
 ./install.sh
 ```
-
-
 
 ## st
 ```bash
@@ -30,15 +27,11 @@ cd st
 sudo make clean install
 ```
 
-
-
 ## dwm
 ```bash
 git clone https://git.suckless.org/dwm
 sudo make clean install
 ```
-
-
 
 ## vim
 ```bash

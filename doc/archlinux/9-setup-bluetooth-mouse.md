@@ -1,16 +1,12 @@
 ## install packages
 ```bash
-pacman -S bluez bluez-utils 
+pacman -S bluez bluez-utils
 ```
-
-
 
 ## start service
 ```bash
 systemctl start bluetooth
 ```
-
-
 
 ## set up device
 ```bash
