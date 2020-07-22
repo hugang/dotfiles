@@ -8,7 +8,7 @@ ls
 
 3. ## load
 ```bash
-set root=(hd0)
+set root=(hd0,msdos2)
 chainloader (hd0,msdos2)/efi/boot/bootx64.efi
 boot
 ```
