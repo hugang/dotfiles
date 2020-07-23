@@ -1,6 +1,39 @@
 ## tools
 ```bash
-sudo pacman -S ranger feh man git picom acpi alsa-utils
+sudo pacman -S feh man git picom acpi alsa-utils
+```
+
+## lightdm
+
+### install
+
+```shell
+pacman -S lightdm
+```
+
+### enable lightdm autostart
+
+```shell
+systemctl enable lightdm
+```
+
+### set greeter
+
+> vim /etc/lightdm/lightdm.conf
+
+> uncomment greeter-session and set your own
+> use ls /usr/share/xgreeters to check what you can set
+
+## ranger
+
+```bash
+sudo pacman -S ranger
+# copy config
+ranger --copy-config=all
+# get icon plugin (need install nerd-fonts)
+mkdir ~/.config/ranger/plugins
+cd ~/.config/ranger/plugins
+git clone https://github.com/alexanderjeurissen/ranger_devicons --depth=1
 ```
 
 ## yay
@@ -19,6 +52,7 @@ git clone https://github.com/ryanoasis/nerd-fonts.git --depth=1
 cd nerd-fonts
 ./install.sh
 ```
+- sarasa-gothic : font for Japanese and Chinese
 
 ## st
 ```bash
@@ -52,3 +86,10 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting
 > edit .zshrc
 plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 
+
+## input
+```bash
+sudo pacman -S fcitx fcitx-im fcitx-configtool fcitx-googlepinyin
+# start fcitx server
+fcitx &
+```

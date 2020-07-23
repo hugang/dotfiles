@@ -1,5 +1,5 @@
 1. ## reboot pc
-> press esc to enter grub2 command line interpreter
+> press esc(c for command line when load grub) to enter grub2 command line interpreter
 
 2. ## find partitions
 ```bash
