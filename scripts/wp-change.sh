@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # feh --recursive --randomize --bg-fill ~/Pictures/wallpapers/kimetsu
-feh --recursive --randomize --bg-fill ~/pictures/scene
+feh --recursive --randomize --bg-fill ~/Pictures/scene

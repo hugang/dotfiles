@@ -174,20 +174,26 @@ qa - 录制宏 a
 q - 停止录制宏
 @a - 执行宏 a
 @@ - 重新执行上次执行的宏
-剪切, 复制, 粘贴
+```
+
+# 剪切, 复制, 粘贴
+```shell
 yy - 复制当前行
 2yy - 复制 2 行
 yw - 复制当前单词
 y$ - 复制, 从光标位置到行末
 p - 在光标后粘贴
 P - 在光标前粘贴
-dd - 剪切当前行
+dd - 剪切当前行>
 2dd - 剪切 2 行
 dw - 剪切当前单词
 D - 剪切, 从光标位置到行末
 d$ - 剪切, 从光标位置到行末 (同<kbd>D</kbd>)
 x - 剪切当前字符
-Indent text
+```
+
+# Indent text
+```shell
 >> - indent (move right) line one shiftwidth
 << - de-indent (move left) line one shiftwidth
 >% - indent a block with () or {} (cursor on brace)

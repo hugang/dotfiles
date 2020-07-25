@@ -12,6 +12,7 @@ alias grm='git reset --mixed'
 alias grs'git reset --soft'
 
 alias ra='ranger'
-alias s='archey3'
+# alias s='archey3'
+alias s='neofetch'
 alias c='clear'
 
