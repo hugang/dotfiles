@@ -1,160 +1,84 @@
-# java基础
-
-## Java的特性和优势
-
-## Java的三种版本
-
-## 安装开发环境
-
-## 第一个程序 HelloWorld
-
-## 编译型和解释型
-
-## 使用IDE
-
-## 注释
-
-## 标识符
-
-## 数据类型
-
-## 类型转换
-
-## 变量，常量
-
-## 基本运算
-
-## 自增，自减和Math类
-
-## 逻辑运算符，位运算符
-
-## 三元运算符
-
-## 包机制
-
-## JavaDoc文档生成
-
-## 流程控制
-
-### 用户交互Scanner
-
-```java
-        // 定义scanner接受用户输入
-        Scanner scanner = new Scanner(System.in);
-        // 如果没有输入则继续等待，有输入解析输入内容
-        if (scanner.hasNext()) {
-            // hasNext()和next()只获取第一个参数，空白后面的内容被忽略
-            String next = scanner.next();
-            System.out.println(next);
-        }
-```
-
-```shell
-Hello world!
-Hello
-```
-
-## Scanner进阶
-
-```java
-        if (scanner.hasNextLine()) {
-            // hasNextLine()和nextLine()获取一行参数
-            String next = scanner.nextLine();
-            System.out.println(next);
-        }
-```
-
-```shell
-Hello world!
-Hello world!
-```
 
 
+# Java基础
 
-### 顺序结构
-
-### if选择结构
-
-### switch选择结构
-
-### while循环
-
-### do while循环
-
-### for循环，foreach循环
-
-### break，continue，goto
-
-
-
-## 方法
-
-### 方法的定义
-
-### 方法的调用
-
-### 方法的重载
-
-> 同样的名称，不同的参数
-
-
-
-## 命令行传递参数
-
-```java
-package com.hugang;
-
-public class App {
-    public static void main(String[] args) {
-        // args接受命令行参数
-        // 例： java com.hugang.App hello world
-        // 此时 args为长度2的数组
-        for (String arg : args) {
-            System.out.println(arg);
-        }
-    }
-}
-```
-
-```bash
-java com.hugang.App hello world
-hello
-world
-```
-
-## 可变参数
-
-```java
-    public static void add(String... params){
-		//一个方法中最多一个可变参数，且可变参数必须放在最后位置
-    }
-```
-
-## 递归
-
- ```java
-package com.hugang;
-
-public class App {
-    public static void main(String[] args) {
-        System.out.println(new App().f(10));
-    }
-
-    // 计算阶乘
-    public int f(int i) {
-        if (i == 1) {
-            return 1;
-        } else {
-            return i * f(i - 1);
-        }
-    }
-}
- ```
-
-## 数组
-
-### 什么是数组
-
-### 数组的创建
-
-### 数组的使用
+- [P1 前言01：解决大家的疑问](https://www.bilibili.com/video/BV12J41137hu?p=1)
+- [P2 前言02：Java和Python的抉择](https://www.bilibili.com/video/BV12J41137hu?p=2)
+- [P3 前言03：学习方法及课程概述](https://www.bilibili.com/video/BV12J41137hu?p=3)
+- [P4 前言04：关于教育和对大家的期望](https://www.bilibili.com/video/BV12J41137hu?p=4)
+- [P5 预科01：博客的重要性](https://www.bilibili.com/video/BV12J41137hu?p=5)
+- [P6 预科02：Markdown语法详解](https://www.bilibili.com/video/BV12J41137hu?p=6)
+- [P7 预科03：什么是计算机](https://www.bilibili.com/video/BV12J41137hu?p=7)
+- [P8 预科04：硬件及冯诺依曼结构](https://www.bilibili.com/video/BV12J41137hu?p=8)
+- [P9 预科05：软件及软件开发](https://www.bilibili.com/video/BV12J41137hu?p=9)
+- [P10 预科06：Windows常用快捷键](https://www.bilibili.com/video/BV12J41137hu?p=10)
+- [P11 预科07：基本的Dos命令](https://www.bilibili.com/video/BV12J41137hu?p=11)
+- [P12 预科08：计算机语言发展史](https://www.bilibili.com/video/BV12J41137hu?p=12)
+- [P13 Java入门01：Java帝国的诞生](https://www.bilibili.com/video/BV12J41137hu?p=13)
+- [P14 Java入门02：Java特性和优势](https://www.bilibili.com/video/BV12J41137hu?p=14)
+- [P15 Java入门03：Java三大版本](https://www.bilibili.com/video/BV12J41137hu?p=15)
+- [P16 Java入门04：JDK JRE JVM](https://www.bilibili.com/video/BV12J41137hu?p=16)
+- [P17 Java入门05：安装开发环境](https://www.bilibili.com/video/BV12J41137hu?p=17)
+- [P18 Java入门06：HelloWorld详解](https://www.bilibili.com/video/BV12J41137hu?p=18)
+- [P19 Java入门07：编译型和解释型](https://www.bilibili.com/video/BV12J41137hu?p=19)
+- [P20 Java入门08：使用IDEA开发](https://www.bilibili.com/video/BV12J41137hu?p=20)
+- [P21 Java基础01：注释](https://www.bilibili.com/video/BV12J41137hu?p=21)
+- [P22 Java基础02：标识符和关键字](https://www.bilibili.com/video/BV12J41137hu?p=22)
+- [P23 Java基础03：数据类型讲解](https://www.bilibili.com/video/BV12J41137hu?p=23)
+- [P24 Java基础04：数据类型扩展及面试题讲解](https://www.bilibili.com/video/BV12J41137hu?p=24)
+- [P25 Java基础05：类型转换](https://www.bilibili.com/video/BV12J41137hu?p=25)
+- [P26 Java基础06：变量、常量、作用域](https://www.bilibili.com/video/BV12J41137hu?p=26)
+- [P27 Java基础07：基本运算符](https://www.bilibili.com/video/BV12J41137hu?p=27)
+- [P28 Java基础08：自增自减运算符、初识Math类](https://www.bilibili.com/video/BV12J41137hu?p=28)
+- [P29 Java基础09：逻辑运算符、位运算符](https://www.bilibili.com/video/BV12J41137hu?p=29)
+- [P30 Java基础10：三元运算符及小结](https://www.bilibili.com/video/BV12J41137hu?p=30)
+- [P31 Java基础11：包机制](https://www.bilibili.com/video/BV12J41137hu?p=31)
+- [P32 Java基础12：JavaDoc生成文档](https://www.bilibili.com/video/BV12J41137hu?p=32)
+- [P33 Java流程控制01：用户交互Scanner](https://www.bilibili.com/video/BV12J41137hu?p=33)
+- [P34 Java流程控制02：Scanner进阶使用](https://www.bilibili.com/video/BV12J41137hu?p=34)
+- [P35 Java流程控制03：顺序结构](https://www.bilibili.com/video/BV12J41137hu?p=35)
+- [P36 Java流程控制04：if选择结构](https://www.bilibili.com/video/BV12J41137hu?p=36)
+- [P37 Java流程控制05：Switch选择结构](https://www.bilibili.com/video/BV12J41137hu?p=37)
+- [P38 Java流程控制06：While循环详解](https://www.bilibili.com/video/BV12J41137hu?p=38)
+- [P39 Java流程控制07：DoWhile循环](https://www.bilibili.com/video/BV12J41137hu?p=39)
+- [P40 Java流程控制08：For循环详解](https://www.bilibili.com/video/BV12J41137hu?p=40)
+- [P41 Java流程控制09：打印九九乘法表](https://www.bilibili.com/video/BV12J41137hu?p=41)
+- [P42 Java流程控制10：增强for循环](https://www.bilibili.com/video/BV12J41137hu?p=42)
+- [P43 Java流程控制11：break、continue、goto](https://www.bilibili.com/video/BV12J41137hu?p=43)
+- [P44 Java流程控制12：打印三角形及Debug](https://www.bilibili.com/video/BV12J41137hu?p=44)
+- [P45 Java方法01：什么是方法？](https://www.bilibili.com/video/BV12J41137hu?p=45)
+- [P46 Java方法02：方法的定义和调用](https://www.bilibili.com/video/BV12J41137hu?p=46)
+- [P47 Java方法03：方法的重载](https://www.bilibili.com/video/BV12J41137hu?p=47)
+- [P48 Java方法04：命令行传递参数](https://www.bilibili.com/video/BV12J41137hu?p=48)
+- [P49 Java方法05：可变参数](https://www.bilibili.com/video/BV12J41137hu?p=49)
+- [P50 Java方法06：递归讲解](https://www.bilibili.com/video/BV12J41137hu?p=50)
+- [P51 Java数组01：什么是数组](https://www.bilibili.com/video/BV12J41137hu?p=51)
+- [P52 Java数组02：数组的声明和创建](https://www.bilibili.com/video/BV12J41137hu?p=52)
+- [P53 Java数组03：三种初始化及内存分析](https://www.bilibili.com/video/BV12J41137hu?p=53)
+- [P54 Java数组04：下标越界及小结](https://www.bilibili.com/video/BV12J41137hu?p=54)
+- [P55 Java数组05：数组的使用](https://www.bilibili.com/video/BV12J41137hu?p=55)
+- [P56 Java数组06：二维数组](https://www.bilibili.com/video/BV12J41137hu?p=56)
+- [P57 Java数组07：Arrays类讲解](https://www.bilibili.com/video/BV12J41137hu?p=57)
+- [P58 Java数组08：冒泡排序](https://www.bilibili.com/video/BV12J41137hu?p=58)
+- [P59 Java数组09：稀疏数组](https://www.bilibili.com/video/BV12J41137hu?p=59)
+- [P60 面向对象01：什么是面向对象](https://www.bilibili.com/video/BV12J41137hu?p=60)
+- [P61 面向对象02：回顾方法的定义](https://www.bilibili.com/video/BV12J41137hu?p=61)
+- [P62 面向对象03：回顾方法的调用](https://www.bilibili.com/video/BV12J41137hu?p=62)
+- [P63 面向对象04：类与对象的创建](https://www.bilibili.com/video/BV12J41137hu?p=63)
+- [P64 面向对象05：构造器详解](https://www.bilibili.com/video/BV12J41137hu?p=64)
+- [P65 面向对象06：创建对象内存分析](https://www.bilibili.com/video/BV12J41137hu?p=65)
+- [P66 面向对象07：简单小结类与对象](https://www.bilibili.com/video/BV12J41137hu?p=66)
+- [P67 面向对象08：封装详解](https://www.bilibili.com/video/BV12J41137hu?p=67)
+- [P68 面向对象09：什么是继承](https://www.bilibili.com/video/BV12J41137hu?p=68)
+- [P69 面向对象10：Super详解](https://www.bilibili.com/video/BV12J41137hu?p=69)
+- [P70 面向对象11：方法重写](https://www.bilibili.com/video/BV12J41137hu?p=70)
+- [P71 面向对象12：什么是多态](https://www.bilibili.com/video/BV12J41137hu?p=71)
+- [P72 面向对象13：instanceof和类型转换](https://www.bilibili.com/video/BV12J41137hu?p=72)
+- [P73 面向对象14：static关键字详解](https://www.bilibili.com/video/BV12J41137hu?p=73)
+- [P74 面向对象15：抽象类](https://www.bilibili.com/video/BV12J41137hu?p=74)
+- [P75 面向对象16：接口的定义与实现](https://www.bilibili.com/video/BV12J41137hu?p=75)
+- [P76 面向对象17：N种内部类](https://www.bilibili.com/video/BV12J41137hu?p=76)
+- [P77 异常01：Error和Exception](https://www.bilibili.com/video/BV12J41137hu?p=77)
+- [P78 异常02：捕获和抛出异常](https://www.bilibili.com/video/BV12J41137hu?p=78)
+- [P79 异常03：自定义异常及经验小结](https://www.bilibili.com/video/BV12J41137hu?p=79)
+- [P80 JavaSE总结](https://www.bilibili.com/video/BV12J41137hu?p=80)

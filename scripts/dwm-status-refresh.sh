@@ -71,5 +71,5 @@ export IDENTIFIER="unicode"
 . "$DIR/dwmbar-functions/dwm_date.sh"
 
 
-xsetroot -name "  💿 $(print_mem)M $(dwm_alsa) $(print_bat) $(show_record) $(dwm_date) @HG "
+xsetroot -name "  💿 $(print_mem)M $(dwm_alsa) $(print_bat) $(show_record) $(dwm_date) "
 exit 0
