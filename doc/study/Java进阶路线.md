@@ -5,15 +5,97 @@
 ### Java入门学习
 
 - Java入门01：安装开发环境
+
+  ```shell
+  # download jdk from 
+  # https://www.oracle.com/java/technologies/javase-jdk11-downloads.html
+  
+  # unzip
+  tar xvf jdk-11.0.8_linux-x64_bin.tar.gz
+  export PATH=$PATH:/opt/jdk-11.0.8/bin
+  
+  ➜ java -version
+  java version "11.0.7" 2020-04-14 LTS
+  Java(TM) SE Runtime Environment 18.9 (build 11.0.7+8-LTS)
+  Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.7+8-LTS, mixed mode)
+  ```
+
+  
+
 - Java入门02：HelloWorld详解
+
+  ```java
+  package com.github.hugang.javase;
+  
+  public class HelloWorld {
+      public static void main(String[] args) {
+          System.out.println("Hello,world!");
+      }
+  }
+  ```
+
+  
+
 - Java入门03：编译型和解释型
+
+```bash
+# 生成HelloWorld.class =>编译
+javac com/github/hugang/javase/HelloWorld.java
+# 执行HelloWorld =>解释
+java com.github.hugang.javase.HelloWorld
+```
+
+
+
 - Java入门04：使用IDEA开发
 
 ### Java基础
 
 - Java基础01：注释
+
+  ```shell
+  //单行注释
+  /* */复数行注释
+  /** */文档注释
+  ```
+
+  
+
 - Java基础02：标识符和关键字
+
+  ```java
+      //修饰符
+      public protected private static final volatile transient  
+      //八大基本数据类型
+      boolean byte char short int long float double
+      //类型
+      class interface enum abstract
+      //流程控制
+      for if else break continue switch while do goto
+      //错误捕捉
+      try catch finally
+      //新建类,返回值
+      new void return
+      //其他
+      synchronized native strictfp (浮動小数点数を厳密に処理する)
+      
+  ```
+
+  
+
 - Java基础03：数据类型讲解
+
+    > 八大基本数据类型拥有初始值。用于局部变量时要赋值
+    >
+    > 转换类型的值范围包含被转型类型值范围可自动转型，否则需强制转换，可能导致溢出
+
+||boolean|byte|char|short|int|long|float|double|
+|--|--|--|--|--|--|--|--|--|
+|初始值|false|0|\u0000|0|0|0|0.0f|0.0d|
+|字节|1bit|1|2|2|4|8|4|8|
+
+
+​    
 - Java基础04：数据类型扩展及面试题讲解
 - Java基础05：类型转换
 - Java基础06：变量、常量、作用域
@@ -310,40 +392,134 @@ java.awt.event.ActionEvent (995)
 ### MySQL初级
 
 - 什么是数据库，为什么要学习数据库
+
+| 前端     | 后台                 | 数据库       |
+| -------- | -------------------- | ------------ |
+| 展示数据 | 连接数据库，加工数据 | **存储数据** |
+
+
+
 - 初识Mysql，关系型和非关系型数据库区别
+
 - 安装MySQL详细说明
-- Sqlyog软件安装和使用
+
+  ```shell
+  # mysql5.7.31 
+  # linux installation
+  yay mysql
+  # enable service
+  sudo systemctl enable mysqld
+  # start service
+  sudo systemctl start mysqld
+  # initialize db
+  sudo mysqld --initialize-insecure --user=mysql
+  # connect to mysql
+  mysql -u root -p
+  # update root password
+  UPDATE mysql.user SET authentication_string=PASSWORD('123456') WHERE User='root';
+  FLUSH PRIVILEGES;
+  ```
+
+  
+
+- dbeaver软件安装和使用
+
+  ```shell
+  # dbeaver installation
+  sudo pacman -S dbeaver
+  ```
+
+  
+
 - 基本的命令行操作
+
+  ```sql
+  create database test;
+  show databases;
+  use database test;
+  
+  desc test.student;
+  create table student(
+  `name` char(10),
+  `id` char(10)
+  );
+  drop table student;
+  ```
+
+  
+
 - 操作数据库语句
+
+  ```sql
+  --増删改查
+  insert into student(id,name) values ('1','hugang');
+  select * from student;
+  
+  update student set name='hugang2' where id='1';
+  delete from student where id='1';
+  
+  ```
+
+  
+
 - 列的数据类型讲解
+
 - 数据库的字段属性
+
 - 创建数据库表
+
 - MyISAM和InnoDB区别
+
 - 修改和删除数据表字段
+
 - 数据库级别的外键
+
 - Insert语句详解
+
 - Update语句详解
+
 - Delete和Truncate详解
+
 - 基本的Select语句和别名使用
+
 - 去重及据库的表达式
+
 - Where子句之逻辑运算符
+
 - 模糊查询操作符详解
+
 - 联表查询JoinON详解
+
 - 自连接及联表查询练习
+
 - 分页和排序
+
 - 子查询和嵌套查询
+
 - MySQL常用函数
+
 - 聚合函数及分组过滤
+
 - 拓展之数据库级别的MD5加密
+
 - Select小结
+
 - 事务ACID原则、脏读、不可重复读、幻读
+
 - 测试事务实现转账
+
 - 索引介绍及索引的分类
+
 - SQL编程创建100万条数据测试索引
+
 - 索引原则和明日安排
+
 - 数据库用户管理
+
 - MySQL备份
+
 - 如何设计一个项目的数据库
+
 - 数据库的三大范式
 
 ### JDBC
