@@ -8,7 +8,7 @@
 #/bin/bash ~/scripts/autostart_wait.sh &
 
 
-/bin/bash ~/scripts/tap-to-click.sh &
+#/bin/bash ~/scripts/tap-to-click.sh &
 # status
 /bin/bash ~/scripts/dwm-status.sh &
 /bin/bash ~/scripts/wp-autochange.sh &

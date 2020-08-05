@@ -15,4 +15,4 @@ alias ra='ranger'
 # alias s='archey3'
 alias s='neofetch'
 alias c='clear'
-
+alias dl='aria2c -x 16'
