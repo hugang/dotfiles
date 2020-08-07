@@ -61,8 +61,8 @@ export IDENTIFIER="unicode"
 #. "$DIR/dwmbar-functions/dwm_battery.sh"
 #. "$DIR/dwmbar-functions/dwm_mail.sh"
 #. "$DIR/dwmbar-functions/dwm_backlight.sh"
-. "$DIR/dwmbar-functions/dwm_alsa.sh"
-#. "$DIR/dwmbar-functions/dwm_pulse.sh"
+#. "$DIR/dwmbar-functions/dwm_alsa.sh"
+. "$DIR/dwmbar-functions/dwm_pulse.sh"
 #. "$DIR/dwmbar-functions/dwm_weather.sh"
 #. "$DIR/dwmbar-functions/dwm_vpn.sh"
 #. "$DIR/dwmbar-functions/dwm_network.sh"
@@ -71,5 +71,5 @@ export IDENTIFIER="unicode"
 . "$DIR/dwmbar-functions/dwm_date.sh"
 
 
-xsetroot -name "  💿 $(print_mem)M $(dwm_alsa) $(print_bat) $(show_record) $(dwm_date) "
+xsetroot -name "  💿 $(print_mem)M $(dwm_pulse) $(print_bat) $(show_record) $(dwm_date) "
 exit 0
