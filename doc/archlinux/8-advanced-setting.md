@@ -90,6 +90,25 @@ plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 ## input
 ```bash
 sudo pacman -S fcitx fcitx-im fcitx-configtool fcitx-googlepinyin
+
+# 解决Idea无法使用输入法问题
+# edit .xinitrc
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
+
 # start fcitx server
 fcitx &
 ```
+
+
+
+## idea
+
+```shell
+# 解决dwm无法启动问题
+# edit .xinitrc
+export _JAVA_AWT_WM_NONREPARENTING=1
+export AWT_TOOLKIT=MToolkit
+```
+
