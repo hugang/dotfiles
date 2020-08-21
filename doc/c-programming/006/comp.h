@@ -1,0 +1,1 @@
+int compare(int * i1, int * i2);
