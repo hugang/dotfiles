@@ -82,3 +82,16 @@ Git is a **distributed version-control** system for tracking changes in source c
 
   > current repository config -> .git/config
 
+- git stash
+
+  > git stash
+  >
+  > git stash list
+  >
+  > git stash pop
+  >
+  > git stash drop
+
+- git rm
+
+  > delete from workspace and index
