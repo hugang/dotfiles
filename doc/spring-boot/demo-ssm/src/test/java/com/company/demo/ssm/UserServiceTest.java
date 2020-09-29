@@ -1,6 +1,6 @@
-package com.company.boot.demo;
+package com.company.demo.ssm;
 
-import com.company.boot.demo.starter.autoconfigure.DemoService;
+import com.company.demo.service.UserService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -10,13 +10,12 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
-public class DemoStarterTest {
-
+public class UserServiceTest {
     @Autowired
-    private DemoService demoService;
+    private UserService userService;
 
     @Test
     void test01() {
-        Assertions.assertEquals(demoService.getMsg(), "demo starter");
+        Assertions.assertEquals(4, userService.findAll().size());
     }
 }

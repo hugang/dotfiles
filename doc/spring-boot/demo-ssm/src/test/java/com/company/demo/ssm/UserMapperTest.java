@@ -1,6 +1,7 @@
-package com.company.boot.demo;
+package com.company.demo.ssm;
 
-import com.company.boot.demo.starter.autoconfigure.DemoService;
+import com.company.demo.mapper.UserMapper;
+import com.company.demo.pojo.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -8,15 +9,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+import java.util.List;
+
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
-public class DemoStarterTest {
+public class UserMapperTest {
 
     @Autowired
-    private DemoService demoService;
+    private UserMapper userMapper;
 
     @Test
     void test01() {
-        Assertions.assertEquals(demoService.getMsg(), "demo starter");
+        List<User> all = userMapper.findAll();
+        Assertions.assertEquals(4, all.size());
     }
 }
