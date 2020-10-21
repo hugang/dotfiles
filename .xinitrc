@@ -13,5 +13,5 @@ export XMODIFIERS="@im=fcitx"
 export _JAVA_AWT_WM_NONREPARENTING=1 
 export AWT_TOOLKIT=MToolkit 
 
-#exec dwm
-exec /usr/bin/startxfce4
+exec dwm
+#exec /usr/bin/startxfce4
