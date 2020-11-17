@@ -15,7 +15,7 @@ nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
 " vimrc
 nnoremap <leader>ev :edit ~/.config/nvim/init.vim<cr>
-nnoremap <leader>sv :resource %<cr>
+nnoremap <leader>sv :source %<cr>
 " buffer
 nnoremap <leader>h :bp<cr>
 nnoremap <leader>l :bn<cr>
@@ -47,10 +47,10 @@ noremap <c-k> <c-w>k
 noremap <c-l> <c-w>l
 " window split
 noremap s <nop>
-noremap sk :set nosplitbelow<cr>:split<cr>:set splitbelow<cr>
-noremap sj :set splitbelow<cr>:split<cr>
-noremap sl :set nosplitright<cr>:vsplit<cr>:set splitright<cr>
-noremap sh :set splitright<cr>:vsplit<cr>
+"noremap sk :set nosplitbelow<cr>:split<cr>:set splitbelow<cr>
+noremap sp :set splitbelow<cr>:split<cr>
+noremap sv :set nosplitright<cr>:vsplit<cr>:set splitright<cr>
+"noremap sh :set splitright<cr>:vsplit<cr>
 " window resize
 noremap <up> :res +5<cr>
 noremap <down> :res -5<cr>
@@ -179,3 +179,12 @@ nnoremap <silent> K :call <SID>show_documentation()<CR>
 "===
 set background=dark
 color gruvbox
+
+
+"===
+"=== gruvbox
+"===
+let g:mkdp_auto_start = 0
+nmap <C-s> <Plug>MarkdownPreview<cr>
+nmap <M-s> <Plug>MarkdownPreviewStop
+nmap <C-p> <Plug>MarkdownPreviewToggle
