@@ -129,6 +129,8 @@ let g:coc_global_extensions = [
 	\ 'coc-flutter-tools',
 	\ 'coc-gitignore',
 	\ 'coc-html',
+	\ 'coc-java',
+	\ 'coc-pairs',
 	\ 'coc-json',
 	\ 'coc-lists',
 	\ 'coc-prettier',
