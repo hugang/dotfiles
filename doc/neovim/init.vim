@@ -107,6 +107,7 @@ call plug#begin('~/.local/share/nvim/site/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'gcmt/wildfire.vim'
+Plug 'lambdalisue/suda.vim'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
