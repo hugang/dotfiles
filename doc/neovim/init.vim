@@ -45,6 +45,11 @@ noremap <c-h> <c-w>h
 noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
 noremap <c-l> <c-w>l
+
+noremap <m-h> :vertical resize +5<cr>
+noremap <m-j> :resize +5<cr>
+noremap <m-k> :resize -5<cr>
+noremap <m-l> :vertical resize -5<cr>
 " window split
 noremap s <nop>
 "noremap sk :set nosplitbelow<cr>:split<cr>:set splitbelow<cr>
