@@ -1,5 +1,7 @@
 ## Postgresql
 
+> packages: gcc libreadline-dev zlib1g-dev
+
 - 安装，启动
 
    ```shell
