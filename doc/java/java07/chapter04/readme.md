@@ -1,1 +1,0 @@
-用于分析Elasticsearch中数据的可视化平台Kibana
