@@ -13,6 +13,7 @@ nmap ; :
 " save and quit
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
+nnoremap <c-w> :SudaWrite<cr>
 " vimrc
 nnoremap <leader>ev :edit ~/.config/nvim/init.vim<cr>
 nnoremap <leader>sv :source %<cr>
