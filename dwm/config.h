@@ -17,8 +17,8 @@ static const int smartgaps          = 1;        /* 1 means no outer gap when the
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
 static const Bool viewontag         = True;     /* Switch view on tag switch */
-static const char *fonts[]          = { "SauceCodePro Nerd Font Mono:size=14" };
-static const char dmenufont[]       = "SauceCodePro Nerd Font Mono:size=14";
+static const char *fonts[]          = { "SauceCodePro Nerd Font Mono:size=16" };
+static const char dmenufont[]       = "SauceCodePro Nerd Font Mono:size=16";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -85,19 +85,19 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 //static const char *browsercmd[]  = { "google-chrome-stable", NULL };
 
-//static const char *upvol[]   = { "/home/david/scripts/vol-up.sh",  NULL };
-//static const char *downvol[] = { "/home/david/scripts/vol-down.sh",  NULL };
-//static const char *mutevol[] = { "/home/david/scripts/vol-toggle.sh",  NULL };
+static const char *upvol[]   = { "/home/hg/scripts/vol-up.sh",  NULL };
+static const char *downvol[] = { "/home/hg/scripts/vol-down.sh",  NULL };
+static const char *mutevol[] = { "/home/hg/scripts/vol-toggle.sh",  NULL };
 
-//static const char *wpcmd[]  = { "/home/david/scripts/wp-change.sh", NULL };
-//static const char *sktogglecmd[]  = { "/home/david/scripts/sck-tog.sh", NULL };
+//static const char *wpcmd[]  = { "/home/hg/scripts/wp-change.sh", NULL };
+//static const char *sktogglecmd[]  = { "/home/hg/scripts/sck-tog.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
 //static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "80x24", NULL };
 
-//static const char *setcolemakcmd[]  = { "/home/david/scripts/setxmodmap-colemak.sh", NULL };
-//static const char *setqwertycmd[]  = { "/home/david/scripts/setxmodmap-qwerty.sh", NULL };
+//static const char *setcolemakcmd[]  = { "/home/hg/scripts/setxmodmap-colemak.sh", NULL };
+//static const char *setqwertycmd[]  = { "/home/hg/scripts/setxmodmap-qwerty.sh", NULL };
 
-//static const char *suspendcmd[]  = { "/home/david/scripts/suspend.sh", NULL };
+static const char *suspendcmd[]  = { "/home/hg/scripts/suspend.sh", NULL };
 
 static const char *screenshotcmd[] = { "flameshot", "gui", NULL };
 //static const char *screenshotcmd[] = { "gscreenshot", "-sc", NULL };
@@ -107,6 +107,9 @@ static Key keys[] = {
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
+	{ 0,              XF86XK_AudioLowerVolume, spawn,          {.v = downvol } },
+	{ 0,              XF86XK_AudioMute,        spawn,          {.v = mutevol } },
+	{ 0,              XF86XK_AudioRaiseVolume, spawn,          {.v = upvol   } },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
