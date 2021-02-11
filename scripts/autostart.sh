@@ -8,7 +8,7 @@
 #/bin/bash ~/scripts/autostart_wait.sh &
 
 
-#/bin/bash ~/scripts/tap-to-click.sh &
+/bin/bash ~/scripts/tap-to-click.sh &
 # status
 /bin/bash ~/scripts/dwm-status.sh &
 /bin/bash ~/scripts/wp-autochange.sh &
@@ -20,7 +20,7 @@ xfce4-power-manager &
 #xrandr --output eDP1 --mode 1366x768
 #xrandr --output HDMI-1 --auto --mode 1920x1080 --left-of eDP1
 # multi display
-xrandr --output HDMI1 --auto --mode 1920x1080 --left-of eDP1
+# xrandr --output HDMI1 --auto --mode 1920x1080 --left-of eDP1
 # wallpaper
 #/bin/bash ~/scripts/setxmodmap-colemak.sh &
 /bin/bash ~/scripts/setxmodmap-qwerty.sh &
