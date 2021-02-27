@@ -119,7 +119,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
 Plug 'mg979/vim-visual-multi'
-Plug 'iamcco/markdown-preview.nvim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'preservim/nerdcommenter'
 
 call plug#end()
@@ -191,7 +191,7 @@ color gruvbox
 
 
 "===
-"=== gruvbox
+"=== markdown
 "===
 let g:mkdp_auto_start = 0
 nmap <C-s> <Plug>MarkdownPreview<cr>
