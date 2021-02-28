@@ -82,6 +82,7 @@ set scrolloff=4
 set ttimeoutlen=0
 set notimeout
 set nowrap
+set noswapfile
 set tw=0
 set indentexpr=
 set foldmethod=indent
