@@ -8,6 +8,8 @@ services:
       - 8083:8080
       - 50003:50000
     container_name: my-jenkins
+    environment:
+      - JENKINS_OPTS="--prefix=/jenkins"
     volumes:
       - ./data:/var/jenkins_home
       - ./docker.sock:/var/run/docker.sock
