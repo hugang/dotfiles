@@ -28,5 +28,5 @@ xfce4-power-manager &
 #TODO can't launch dwm when turn this option on
 # install amixer acpi acpitool bc
 # refresh status
-#/bin/bash ~/scripts/dwm-status-refresh.sh
+/bin/bash ~/scripts/dwm-status-refresh.sh
 fcitx &

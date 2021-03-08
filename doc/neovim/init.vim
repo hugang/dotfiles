@@ -29,6 +29,7 @@ nnoremap Y y$
 "space to tab
 nnoremap <leader>tt :%s/    /\t/g
 vnoremap <leader>tt :s/    /\t/g
+nnoremap <leader>t<space> :s/\t/    /g
 " insert mode cursor movement
 inoremap <c-a> <esc>I
 inoremap <c-e> <esc>A
