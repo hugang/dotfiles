@@ -6,12 +6,14 @@ export LC_ALL=en_US.utf8
 #export LANG=zh_CN.utf8
 #export LC_ALL=zh_CN.utf8
 
+# input method
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 
+# java ide
 export _JAVA_AWT_WM_NONREPARENTING=1 
 export AWT_TOOLKIT=MToolkit 
 
-#exec dwm
-exec /usr/bin/startxfce4
+exec dwm
+#exec /usr/bin/startxfce4
