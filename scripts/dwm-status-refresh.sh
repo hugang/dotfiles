@@ -24,11 +24,12 @@ get_battery_combined_percent() {
 
 get_battery_charging_status() {
 
-	if $(acpi -b | grep --quiet Discharging)
+	#if $(acpi -b | grep --quiet Discharging)
+	if $(acpi -b | grep --quiet Charging)
 	then
-		echo "🔋";
-	else # acpi can give Unknown or Charging if charging, https://unix.stackexchange.com/questions/203741/lenovo-t440s-battery-status-unknown-but-charging
 		echo "🔌";
+	else # acpi can give Unknown or Charging if charging, https://unix.stackexchange.com/questions/203741/lenovo-t440s-battery-status-unknown-but-charging
+		echo "🔋";
 	fi
 }
 
@@ -71,5 +72,5 @@ export IDENTIFIER="unicode"
 . "$DIR/dwmbar-functions/dwm_date.sh"
 
 
-xsetroot -name "  💿 $(print_mem)M $(dwm_pulse) $(print_bat) $(show_record) $(dwm_date) "
+xsetroot -name " 💿 $(print_mem)M $(dwm_pulse) $(print_bat) $(show_record) $(dwm_date) "
 exit 0
