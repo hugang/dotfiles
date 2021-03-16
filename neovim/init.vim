@@ -123,6 +123,10 @@ Plug 'morhetz/gruvbox'
 Plug 'mg979/vim-visual-multi'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'preservim/nerdcommenter'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'kevinhwang91/rnvimr'
 
 call plug#end()
 
@@ -137,7 +141,6 @@ let g:coc_global_extensions = [
 	\ 'coc-flutter-tools',
 	\ 'coc-gitignore',
 	\ 'coc-html',
-	\ 'coc-java',
 	\ 'coc-pairs',
 	\ 'coc-json',
 	\ 'coc-lists',
@@ -198,4 +201,7 @@ color gruvbox
 let g:mkdp_auto_start = 0
 nmap <C-s> <Plug>MarkdownPreview<cr>
 nmap <M-s> <Plug>MarkdownPreviewStop
-nmap <C-p> <Plug>MarkdownPreviewToggle
+"nmap <C-p> <Plug>MarkdownPreviewToggle
+
+nnoremap <silent> <C-p> :RnvimrToggle<CR>
+tnoremap <silent> <C-p> <C-\><C-n>:RnvimrToggle<CR>

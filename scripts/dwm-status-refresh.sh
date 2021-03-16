@@ -15,7 +15,7 @@ get_battery_combined_percent() {
 	total_charge=$(expr $(acpi -b | awk -F',' '{print $2}' | grep -Eo "[0-9]+" | paste -sd+ | bc));
 
 	# get amount of batteries in the device
-	battery_number=$(acpi -b | wc -l);
+	battery_number=$(acpi -b | grep -v 'unavailable' | wc -l);
 
 	percent=$(expr $total_charge / $battery_number);
 

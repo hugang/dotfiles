@@ -1,3 +1,9 @@
 {
-	"coc.preferences.formatOnSaveFiletypes": ["java","javascript","css"]
+  "coc.preferences.formatOnSaveFiletypes": [
+    "java",
+    "javascript",
+    "css",
+    "json"
+  ],
+  "java.home": "/home/hg/.local/jdk11"
 }
