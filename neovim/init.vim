@@ -123,7 +123,6 @@ Plug 'morhetz/gruvbox'
 Plug 'mg979/vim-visual-multi'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'preservim/nerdcommenter'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'kevinhwang91/rnvimr'
@@ -134,21 +133,13 @@ call plug#end()
 "=== coc.nvim
 "===
 let g:coc_global_extensions = [
-	\ 'coc-actions',
-	\ 'coc-css',
-	\ 'coc-diagnostic',
 	\ 'coc-explorer',
-	\ 'coc-flutter-tools',
-	\ 'coc-gitignore',
 	\ 'coc-html',
 	\ 'coc-pairs',
 	\ 'coc-json',
 	\ 'coc-lists',
 	\ 'coc-prettier',
-	\ 'coc-pyright',
-	\ 'coc-python',
 	\ 'coc-snippets',
-	\ 'coc-sourcekit',
 	\ 'coc-stylelint',
 	\ 'coc-syntax',
 	\ 'coc-tslint-plugin',
