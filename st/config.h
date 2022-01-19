@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Code Nerd Font Mono:pixelsize=20:antialias=true:autohint=true";
-//static char *font = "Sarasa Mono CL:pixelsize=24:antialias=true:autohint=true";
+//static char *font = "Fira Code Nerd Font Mono:pixelsize=20:antialias=true:autohint=true";
+static char *font = "Sarasa Mono CL:pixelsize=24:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*

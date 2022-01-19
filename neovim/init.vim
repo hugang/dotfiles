@@ -127,6 +127,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'kevinhwang91/rnvimr'
 
+Plug 'github/copilot.vim'
+
 call plug#end()
 
 "===
@@ -190,9 +192,9 @@ color gruvbox
 "=== markdown
 "===
 let g:mkdp_auto_start = 0
-nmap <C-s> <Plug>MarkdownPreview<cr>
+"nmap <C-s> <Plug>MarkdownPreview<cr>
 nmap <M-s> <Plug>MarkdownPreviewStop
-"nmap <C-p> <Plug>MarkdownPreviewToggle
+nmap <C-s> <Plug>MarkdownPreviewToggle
 
 nnoremap <silent> <C-p> :RnvimrToggle<CR>
 tnoremap <silent> <C-p> <C-\><C-n>:RnvimrToggle<CR>
