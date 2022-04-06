@@ -125,10 +125,6 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'preservim/nerdcommenter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'kevinhwang91/rnvimr'
-
-Plug 'github/copilot.vim'
-
 call plug#end()
 
 "===
@@ -196,5 +192,4 @@ let g:mkdp_auto_start = 0
 nmap <M-s> <Plug>MarkdownPreviewStop
 nmap <C-s> <Plug>MarkdownPreviewToggle
 
-nnoremap <silent> <C-p> :RnvimrToggle<CR>
-tnoremap <silent> <C-p> <C-\><C-n>:RnvimrToggle<CR>
+nnoremap <silent> <C-p> :FZF<CR>
